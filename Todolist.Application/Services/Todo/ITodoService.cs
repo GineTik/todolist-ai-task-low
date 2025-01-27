@@ -1,4 +1,3 @@
-using Todolist.Application.DTOs;
 using Todolist.Application.DTOs.Todo;
 
 namespace Todolist.Application.Services.Todo;

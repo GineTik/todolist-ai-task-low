@@ -27,13 +27,13 @@ public class TodoController : ControllerBase
         await _service.CreateAsync(dto);
     }
     
-    [HttpPut("update/{id}")]
+    [HttpPut("update/{id:int}")]
     public async Task Update([FromRoute] int id, [FromBody] CreateOrUpdateTodoDto dto)
     {
         await _service.UpdateAsync(id, dto);
     }
     
-    [HttpDelete("delete/{id}")]
+    [HttpDelete("delete/{id:int}")]
     public async Task Delete([FromRoute] int id)
     {
         await _service.DeleteByIdAsync(id);

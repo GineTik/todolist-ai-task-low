@@ -1,6 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Moq;
 using Todolist.Application.Repositories;
 using Todolist.Application.Repositories.EF;
 
