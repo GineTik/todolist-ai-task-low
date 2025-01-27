@@ -4,7 +4,8 @@ namespace Todolist.Infrastructure.Repositories;
 
 public interface ITodoRepository
 {
-    Task<Todo> CreateAsync(Todo todo);
-    Task<Todo> UpdateAsync(Todo todo);
+    Task CreateAsync(Todo todo);
+    Task UpdateAsync(Todo todo);
     Task DeleteByIdAsync(int id);
+    Task<IEnumerable<Todo>> GetAllAsync();
 }
