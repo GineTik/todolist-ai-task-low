@@ -17,4 +17,14 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Pomelo.EntityFrameworkCore.MySql">
+        <HintPath>..\..\..\.nuget\packages\pomelo.entityframeworkcore.mysql\9.0.0-preview.2.efcore.9.0.0\lib\net8.0\Pomelo.EntityFrameworkCore.MySql.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todolist.Application\Todolist.Application.csproj" />
+    </ItemGroup>
+
 </Project>
